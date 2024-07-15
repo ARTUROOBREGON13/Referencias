@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+/* Media Query */
+.media-query-example {
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Cambia el fondo y el color del texto cuando el ancho de la ventana es menor a 600px */
+@media (max-width: 600px) {
+    .media-query-example {
+        background-color: lightcoral;
+        color: white;
+    }
+}
+
+/* Animación de Esferas */
+.animation-container {
+    position: relative; /* Posiciona los elementos de las esferas de manera relativa al contenedor */
+    width: 200px; /* Ancho del contenedor de animación */
+    height: 200px; /* Altura del contenedor de animación */
+    margin: 50px auto; /* Centra el contenedor horizontalmente */
+}
+
+.sphere {
+    width: 20px; /* Ancho de cada esfera */
+    height: 20px; /* Altura de cada esfera */
+    border-radius: 50%; /* Hace que cada esfera sea circular */
+    position: absolute; /* Posiciona cada esfera de manera absoluta dentro del contenedor */
+    top: 50%; /* Centra verticalmente cada esfera dentro del contenedor */
+    left: 50%; /* Centra horizontalmente cada esfera dentro del contenedor */
+    transform: translate(-50%, -50%); /* Ajusta la posición de cada esfera para estar en el centro */
+    animation: orbit 5s linear infinite; /* Aplica la animación de rotación a cada esfera */
+}
+
+/* Diferentes colores para cada esfera */
+.sphere1 {
+    background-color: lightblue;
+}
+
+.sphere2 {
+    background-color: lightgreen;
+}
+
+.sphere3 {
+    background-color: lightcoral;
+}
+
+.sphere4 {
+    background-color: lightgoldenrodyellow;
+}
+
+.sphere5 {
+    background-color: lightpink;
+}
+
+/* Animación de rotación de las esferas */
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg) translateX(80px) rotate(0deg); /* Inicio de la animación */
+    }
+    100% {
+        transform: rotate(360deg) translateX(80px) rotate(-360deg); /* Fin de la animación */
+    }
+}
