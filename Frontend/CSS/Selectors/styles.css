@@ -1,0 +1,82 @@
+/* Aqui podras encontrar varios ejemplos correspondientes a los selectores CSS */
+
+/* Selector de Etiqueta o Tag 
+
+Como su nombre lo menciona, son reglas que deben ser aplicadas a todas las etiquetas de este tipo. 
+hacer que todo el contenido de texto
+de estos elementos sea justificado.
+
+Solo se utiliza para definirlo el nombre de la etiqueta y se abren llaves para indicar las reglas.
+En esta ocasión usaremos la etiqueta de parrafo <p>.
+*/
+
+p {
+    text-align: justify; /* hace que todo el contenido de texto de estos elementos sea justificado.*/
+}
+
+/* Selector de Clase
+
+Como la mayoria de tags de HTML se les puede aplicar una clase con la cual se pueden asociar, esto 
+nos permite realizar la selección o filtrado de ese elemento con esa clase y definir las reglas de 
+este elemento.
+
+Se hace uso del nombre de la clase definida anteponiendola con un . (punto)
+*/
+
+.center {
+    text-align: center; /* hace que todo el contenido del texto este alineado al centro.*/
+}
+
+/* 
+Se pueden hacer combinaciones de etiquetas y clases uniendo el nombre de la etiqueta y haciendo uso
+del selector de clase sin separar ambos elementos.
+Esto tambien se puede aplicar entre varias clases, implicando que el elemento cuenta con ambas clases.
+*/
+
+p.center {
+    text-align: center; /* hace que todos los parrafos con la clase center tengan su texto alineado al centro.*/
+}
+
+.title.center {
+    text-align: center; /* hace que todo el texto que contengan este alineado al centro.*/
+    font-weight: bold; /* hace que todo el texto que contengan se encuentre en negrilla.*/
+}
+
+/*  Selectores por ID 
+
+Como se le puede asignar un identificador unico a los elementos HTML podemos hacer que solo aquel elemento 
+cuente con ciertas reglas para su estilo.
+*/
+
+#submit {
+    color:white; /* Hace que el color de la letra sea blanco */
+    background-color: darkblue; /* Hace que el color del botón sea azul oscuro */
+    width: 100px; /* Hace que el ancho del elemento sea 100 pixeles */
+}
+
+/* Selector Universal */
+* {
+    margin: 0; /* Hace que todos los elementos no tengan margen ni padding entre ellos. */
+    padding: 0;
+}
+
+/* Selectores de Atributo */
+input[type="text"] {
+    border: 2px solid gray; /* Hace que el elemento tenga un borde gris, padding de 5 pixeles*/
+    padding: 5px;
+    margin: 10px 0; /* y un margen de 10 pixeles verticalmente (top y bottom) */
+}
+
+/* Selector de Clase con Combinaciones */
+.item {
+    list-style: none; /* Hace que los elementos de una lista no tengan un icono o indicativo, por defecto es un punto */
+    padding: 5px; /* Hace que el padding sea 5 pixeles en todas las direcciones (top, bottom, left, right) */
+}
+
+.first {
+    color: green; /* Hace que el color de la letra sea verde */
+}
+
+.last {
+    color: red; /* Hace que el color de la letra sea rojo */
+}
