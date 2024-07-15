@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+}
+
+.card-header h1 {
+    margin: 0;
+}
+
+.card-header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.bio, .skills {
+    margin-bottom: 20px;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background-color: #f4f4f4;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.card-footer {
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.social-link {
+    text-decoration: none;
+    color: #4CAF50;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #388E3C;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+    }
+}
